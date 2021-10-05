@@ -1,25 +1,25 @@
 package abstractfactory.factory;
 
 import abstractfactory.button.Button;
-import abstractfactory.button.IosButton;
+import abstractfactory.button.WebButton;
 import abstractfactory.checkbox.Checkbox;
-import abstractfactory.checkbox.IosCheckbox;
+import abstractfactory.checkbox.CheckboxWeb;
 import abstractfactory.input.Input;
-import abstractfactory.input.IosInput;
+import abstractfactory.input.WebInput;
 
-public class ScreenIosFactory implements ScreenFactory {
+public class ScreenWebFactory implements ScreenFactory{
     @Override
     public Button createButton() {
-        return new IosButton();
+        return new WebButton();
     }
 
     @Override
     public Checkbox createCheckbox() {
-        return new IosCheckbox();
+        return new CheckboxWeb();
     }
 
     @Override
     public Input createInput() {
-        return new IosInput();
+        return new WebInput();
     }
 }
