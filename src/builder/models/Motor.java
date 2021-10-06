@@ -30,5 +30,11 @@ public class Motor {
         }
     }
 
+    public double getVolume() {
+        return volume;
+    }
 
+    public double getQuilomentragem() {
+        return quilomentragem;
+    }
 }

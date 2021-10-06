@@ -2,7 +2,7 @@ package builder.builders;
 
 import builder.models.*;
 
-public class CarroManualBuilder implements Builder {
+public class ManualCarroBuilder implements Builder {
     private TipoCarro tipo;
     private int assentos;
     private Motor motor;
